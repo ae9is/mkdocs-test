@@ -47,7 +47,7 @@ jobs:
       - name: Install Dependencies
         run: |
           cd packages/docs
-          pip install --upgrade .
+          pip install pdm
           pdm install
       - name: Build Docs and Deploy
         run: mkdocs gh-deploy --force
