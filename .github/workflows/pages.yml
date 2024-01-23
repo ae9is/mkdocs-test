@@ -48,9 +48,9 @@ jobs:
         run: |
           cd packages/docs
           pip install pdm
-          pdm install
+          pdm install --frozen-lockfile --production
       - name: Build Docs and Deploy
-        run: mkdocs gh-deploy --force
+        run: pdm run deploy
 #      - name: Setup Pages
 #        uses: actions/configure-pages@v4
 #      - name: Upload artifact
