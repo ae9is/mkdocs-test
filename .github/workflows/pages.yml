@@ -50,7 +50,7 @@ jobs:
           pip install pdm
           pdm install --frozen-lockfile --production
       - name: Build Docs and Deploy
-        run: pdm run deploy
+        run: pdm run deploy-pages
 #      - name: Setup Pages
 #        uses: actions/configure-pages@v4
 #      - name: Upload artifact
