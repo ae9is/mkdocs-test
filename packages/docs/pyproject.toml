@@ -34,7 +34,7 @@ distribution = "true"
 [tool.pdm.scripts]
 start = "mkdocs serve"
 build = "mkdocs build"
-deploy = "mkdocs gh-deploy --force"
+deploy-pages = "mkdocs gh-deploy --force"
 lint = "ruff check src"
 format = "ruff format ."
 safety = { shell = "pdm export -o requirements.txt && safety check -r requirements.txt --bare" }
